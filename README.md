@@ -2,6 +2,18 @@
 
 Twilio voice agent that takes inbound calls, answers in Spanish or English, and books appointments on a Google Calendar via Claude tool use.
 
+```mermaid
+flowchart LR
+    Caller --> Twilio
+    Twilio -->|webhook| Webhook[Flask /incoming-call]
+    Webhook --> Conv[Conversation]
+    Conv -->|tool_use| Cal[Google Calendar]
+    Conv -->|response text| TTS[ElevenLabs TTS]
+    TTS -->|audio stream| Twilio
+    Twilio -->|audio stream| Caller
+    Conv -->|state| Redis[(Session state)]
+```
+
 ## Stack
 
 * Twilio Voice for telephony
