@@ -47,11 +47,10 @@ def book_slot(
     duration_min: int,
     attendee_phone: str,
 ) -> dict:
-    """Create the calendar event. Returns the created event dict.
+    """Create the calendar event.
 
-    The caller is responsible for verifying the slot is still open via
-    find_open_slots immediately before calling this — Google Calendar's
-    API does not provide native conflict-detection on insert.
+    Verify the slot is still open via find_open_slots before calling
+    this. The Calendar API does not check conflicts on insert.
     """
     return cal.create_event(
         summary=summary,

@@ -1,8 +1,5 @@
-"""Twilio webhook entrypoint. Receives /incoming-call, manages session,
-streams TTS responses back.
-
-In production you want this behind gunicorn with multiple workers and
-shared Redis state. For local dev, the in-memory dict is fine.
+"""Twilio webhook entrypoint. Run behind gunicorn with shared Redis
+state in production; the in-memory dict here is for local dev only.
 """
 import os
 from flask import Flask, request, Response

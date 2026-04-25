@@ -1,8 +1,7 @@
-"""Claude-driven dialog manager with tool-use for calendar operations.
+"""Claude dialog manager with tool-use for calendar operations.
 
-Keeps tool definitions colocated with the system prompt so changes don't
-drift. The Anthropic client is injected — pass a real one in production,
-a mock in tests.
+Tools defined alongside the system prompt to keep both in sync. LLM
+client is injected so tests can pass in a fake.
 """
 from datetime import datetime
 from typing import Any, Protocol

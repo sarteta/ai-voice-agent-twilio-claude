@@ -76,4 +76,4 @@ def test_long_appointment_fewer_slots_fit():
     cal = FakeCalendar([])
     slots = find_open_slots(cal, datetime(2026, 5, 1, tzinfo=timezone.utc),
                             duration_min=90, business_hours=(9, 12))
-    assert len(slots) == 4  # 9:00, 9:30, 10:00, 10:30 — last must end <=12
+    assert len(slots) == 4  # 9:00, 9:30, 10:00, 10:30 -- last must end <=12
