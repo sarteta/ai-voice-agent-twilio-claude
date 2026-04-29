@@ -1,5 +1,10 @@
 # ai-voice-agent-twilio-claude
 
+[![python](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org)
+[![twilio](https://img.shields.io/badge/twilio-voice-red)](https://www.twilio.com/voice)
+[![claude](https://img.shields.io/badge/claude-tool--use-orange)](https://docs.anthropic.com/claude/docs/tool-use)
+[![license](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
+
 Twilio voice agent that takes inbound calls, answers in Spanish or English, and books appointments on a Google Calendar via Claude tool use.
 
 ```mermaid
