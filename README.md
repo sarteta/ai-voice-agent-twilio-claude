@@ -1,5 +1,6 @@
 # ai-voice-agent-twilio-claude
 
+[![docker](https://github.com/sarteta/ai-voice-agent-twilio-claude/actions/workflows/docker.yml/badge.svg)](https://github.com/sarteta/ai-voice-agent-twilio-claude/actions/workflows/docker.yml)
 [![python](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org)
 [![twilio](https://img.shields.io/badge/twilio-voice-red)](https://www.twilio.com/voice)
 [![claude](https://img.shields.io/badge/claude-tool--use-orange)](https://docs.anthropic.com/claude/docs/tool-use)
